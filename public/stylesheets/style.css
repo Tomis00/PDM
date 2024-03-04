@@ -40,7 +40,18 @@
     color: #007e3a;
 }
 
+/* .ftco-section{
+  background-image: url('../assets/contact-us-background.jpg');
+  height: 100vh;
+}
+.container .contact-us{
+    margin-top: 10rem;
+} */
 /* Add a background color transition to the navbar */
+
+.wrapper.img{
+  background-image: url('../assets/contact-us-background.jpg');
+}
 .navbar {
     transition: background-color 0.5s ease-in-out;
   }
@@ -151,13 +162,24 @@ p {
 a {
   color: currentcolor;
 }
+#arrow {
+  transition: transform 0.2s ease-in-out;  /* Add a smooth transition */
+}
 
+#arrow:hover {
+  transform: translateX(10px); /* Move 5 pixels to the right */
+  cursor: pointer; /* Indicate that it's clickable */
+}
+
+.fixed-dashboard{
+    width: 100vw;
+}
 /* Utilities */
 .auto-grid {
   display: grid;
   grid-template-columns: repeat(
     auto-fill,
-    minmax(var(--auto-grid-min-size, 14rem), 1fr)
+    minmax(var(--auto-grid-min-size, 16rem), 1fr)
   );
   grid-gap: var(--auto-grid-gap, 0);
   padding: 0;

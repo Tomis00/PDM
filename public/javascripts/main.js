@@ -1,7 +1,7 @@
 // NAVBAR //
 
 // Select the navbar element
-const navbar = document.querySelector("#nav");
+// const navbar = document.querySelector("#nav");
 
 // Add an event listener to the window object to listen for scroll events
 window.addEventListener("scroll", function () {
@@ -24,9 +24,8 @@ window.addEventListener("scroll", function () {
     });
   }
 });
-
-// Getting the Current Tempature //
-$(document).ready(function () {
+// Getting the Current Temperature //
+$(function () {
   // Replace 'YOUR_OPENWEATHERMAP_API_KEY' with your actual API key from OpenWeatherMap
   const apiKey = "f32769cb412055395c07bcd8bfe80f8b";
   const city = "Limassol, CY"; // Replace with the city name you want to fetch weather for
@@ -47,7 +46,7 @@ $(document).ready(function () {
             const temperature = weatherData.main.temp;
 
             // Update the heading content with the fetched temperature
-            $("#temperature").html(temperature + "<sup>o</sup>");
+            $("#temperature").html(temperature + "<sup>o</sup>C");
           }
         ).fail(function () {
           // If the second API request fails, display an error message

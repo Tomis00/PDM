@@ -2,6 +2,7 @@
 const navbar = document.querySelector("#nav");
 
 navbar.classList.remove("fixed-top");
+navbar.classList.add("fixed-dashboard");
 
 //  Firebase Update Data//
 

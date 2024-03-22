@@ -1,15 +1,17 @@
 
 /* Navbar */
 #nav{
-    background-color: transparent;
+    background-color: #e2e2e2;
+    font-size: 23px;
+    height: 90px;
+}
+#nav .container{
+  background-color: #e2e2e2;
 }
 .container #image{
     width: 100px;
 }
 
-.collapse .navbar-nav{
-    font-size: 23px;
-}
 
 #navbarNavAltMarkup .navbar-nav{
     color: black;
@@ -128,7 +130,7 @@ header{
     height: 50rem;
     position: absolute;
     z-index: -1;
-    transform: translate( 640px);
+    transform: translate( 590px);
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 90%);
 }
 
@@ -172,7 +174,7 @@ a {
 }
 
 .fixed-dashboard{
-    width: 100vw;
+    width: 98vw;
 }
 /* Utilities */
 .auto-grid {
@@ -269,12 +271,12 @@ a {
   transition: filter 200ms ease, transform 250ms linear;
 }
 
-.profile h2,
+.profile h3,
 .profile p {
   transform: translateY(2ex);
 }
 
-.profile h2 {
+.profile h3 {
   font-size: 1.7rem;
   line-height: 1.2;
   font-weight: 900;
@@ -297,8 +299,8 @@ a {
   outline-offset: -0.5rem;
 }
 
-.profile:hover :is(h2, p),
-.profile:focus :is(h2, p) {
+.profile:hover :is(h3, p),
+.profile:focus :is(h3, p) {
   transform: none;
 }
 
@@ -321,6 +323,15 @@ a {
   transform: scale(1.05) rotate(1deg);
 }
 /* End Our Team */
+/* Project */
+
+.left-column-project{
+    height: 33.5rem;
+}
+
+.project-section p{
+  text-align: justify;
+}
 
 /* Footer */
 
@@ -358,6 +369,28 @@ a {
 .nav p {
     margin-bottom: 10px; /* add some space between the paragraphs */
 }
+
+
   
 /* End Footer */
 
+/* Media Queries */
+
+@media (max-width: 900px) {
+  .trasform-line-1, .trasform-line-2, .trasform-line-3 {
+    display: none;
+  }
+
+  .margin-right{
+    margin-right: 0;
+  }
+  
+  .left-column-project {
+    height: 26rem;
+}
+  
+  
+  #plant {
+    display: none!important;
+  }
+}

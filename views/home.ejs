@@ -1,28 +1,4 @@
 <% layout('layouts/boilerplate')%>
-    <style>
-        .text-center {
-            text-align: center;
-        }
-
-        .mb-4 {
-            margin-bottom: 16px;
-            /* Adjust according to your preference */
-        }
-
-        .trasform-line-1 {
-            position: absolute;
-            transform: translate(330px, 150px);
-        }
-
-        .trasform-line-2 {
-            transform: translate(330px, 120px);
-        }
-
-        .trasform-line-3 {
-            position: absolute;
-            transform: translate(-330px, -180px);
-        }
-    </style>
     <!-- ======= Hero Section ======= -->
     <section id="hero">
         <div class="container">
@@ -108,8 +84,9 @@
 
                 <div class="col-1"></div>
                 <!-- Left Column -->
-                <div class="left-column-project col-md-3 d-flex flex-column justify-content-between">
-                    <div class="text-center">
+                <div
+                    class="left-column-project col-12 col-md-4 col-xl-3 d-flex flex-column justify-content-between moisture-text">
+                    <div class="text-center mb-5 mb-lg-0">
                         <h3 class="mb-4">CONDITION PROGRESS</h3>
                         <p>This innovative solar-powered plant monitoring system utilizes the ESP32 microcontroller to
                             optimize plant growth
@@ -138,14 +115,31 @@
                             levels, offering a sustainable solution for efficient plant care.</p>
                     </div>
                 </div>
-
+                <div class="d-flex align-items-center justify-content-center moisture-text-m">
+                    <div class="text-center ">
+                        <h3 class="mb-4">CONDITION PROGRESS</h3>
+                        <p>This innovative solar-powered plant monitoring system utilizes the ESP32 microcontroller to
+                            optimize plant growth
+                            through a soil moisture sensor, a DS18B20 temperature sensor, and a DHT11 sensor for ambient
+                            conditions, powered
+                            by a solar panel and lithium-ion battery setup for eco-friendly operation.</p>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center justify-content-center moisture-text-m">
+                    <div class="text-center ">
+                        <h3 class="mb-4">MOISTURE TRACKING</h3>
+                        <p>Employing real-time monitoring through smart sensors, the project automates irrigation based
+                            on soil moisture
+                            levels, offering a sustainable solution for efficient plant care.</p>
+                    </div>
+                </div>
                 <!-- Image Column -->
-                <div class="col-md-4 text-center">
+                <div class="plant-project-div col-4 text-center">
                     <img src="/assets/plant-dashboard-3.png" alt="Project Image" class="img-fluid plant-project">
                 </div>
 
                 <!-- Right Column -->
-                <div class="col-md-3 d-flex align-items-center justify-content-center">
+                <div class="col-12 col-md-4 col-xl-3 d-flex align-items-center justify-content-center">
                     <div class="text-center">
                         <h3 class="mb-4">PLANT PROGRESS</h3>
                         <p>The system's LCD display provides real-time insights into the monitored parameters, enhancing

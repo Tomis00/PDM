@@ -370,17 +370,100 @@ a {
     margin-bottom: 10px; /* add some space between the paragraphs */
 }
 
+.text-center {
+    text-align: center;
+}
 
-  
+.mb-4 {
+    margin-bottom: 16px;
+    /* Adjust according to your preference */
+}
+
+.trasform-line-1 {
+    position: absolute;
+    transform: translate(330px, 150px);
+}
+
+.trasform-line-2 {
+    transform: translate(330px, 300px);
+    position: absolute;
+}
+
+.trasform-line-3 {
+    position: absolute;
+    transform: translate(-330px, -180px);
+}
+
+
+  .moisture-text-m{
+    display: none!important;
+  }
 /* End Footer */
 
 /* Media Queries */
+@media (max-width: 1400px) {
+  #plant{
+      transform: translate( 420px);
+}
+.trasform-line-1 {
+    position: absolute;
+    transform: translate(300px, 150px);
+}
+
+.trasform-line-2 {
+    transform: translate(300px, 300px);
+    position: absolute;
+}
+
+.trasform-line-3 {
+    position: absolute;
+    transform: translate(-300px, -180px);
+}
+h3{
+  font-size: 1.50rem;
+}
+}
+
+@media (max-width: 1300px) {
+  #plant{
+      transform: translate( 400px);
+}
+.team-section {
+    padding: 8rem 1.5rem 2rem;
+}
+}
+
+@media (max-width: 1200px) {
+  #plant{
+      transform: translate( 200px);
+}
+  .project-section .col-1 {
+    display: none;
+  }
+}
+
+@media (max-width: 1050px) {
+  #plant{
+      transform: translate( 0px);
+}
+  .container, .container-md, .container-sm {
+      max-width: 900px;
+  }
+}
 
 @media (max-width: 900px) {
   .trasform-line-1, .trasform-line-2, .trasform-line-3 {
     display: none;
   }
 
+  .project-section
+{
+  
+    margin-bottom: 10rem;
+}
+.project-section p {
+    font-size: 0.9rem;
+}
   .margin-right{
     margin-right: 0;
   }
@@ -393,4 +476,25 @@ a {
   #plant {
     display: none!important;
   }
+}
+
+@media (max-width: 768px) {
+  .plant-project-div,.moisture-text{
+    display: none!important;
+  }
+  .moisture-text-m{
+    display: flex!important;
+    margin-bottom: 2rem;
+  }
+  .project-section p {
+    text-align: center;
+  }.project-section {
+    margin-bottom: 2rem;
+}
+}
+
+@media (max-width: 576px) {
+.team-section {
+    padding: 1rem 1.5rem 2rem;
+}
 }
